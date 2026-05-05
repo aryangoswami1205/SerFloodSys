@@ -27,20 +27,17 @@ Built to replace expensive 24/7 server-based monitoring, this project leverages 
 *   `frontend-dashboard/`: Contains the static frontend (`index.html`, `app.js`, `styles.css`).
 *   `Dockerfile`: A container configuration for safely testing the Lambda function locally in an isolated Linux environment.
 *   `requirements.txt`: Contains `boto3` for local testing only (pre-installed in the AWS Lambda runtime).
-*   `AWS_DEPLOYMENT_GUIDE.md`: Step-by-step instructions on setting up IAM, S3, Lambda, and EventBridge.
-*   `LESSON.md`: Documentation on the system design, containerization, and the benefits of zero-dependency serverless architectures.
 
 ## 🚀 Quick Start & Deployment
 
 This project is designed to be deployed manually via the AWS Management Console to aid in learning cloud infrastructure.
 
-1.  Review the [AWS Deployment Guide](AWS_DEPLOYMENT_GUIDE.md) for full instructions.
-2.  Test the logic locally using Docker:
+1.  Test the logic locally using Docker:
     ```bash
     docker build -t serhydrosys .
     docker run --rm serhydrosys
     ```
-3.  Deploy the frontend by serving the `frontend-dashboard` directory locally or enabling GitHub Pages.
+2.  Deploy the frontend by serving the `frontend-dashboard` directory locally or enabling GitHub Pages.
 
 ## 🛠️ Tech Stack
 
