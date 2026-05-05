@@ -24,7 +24,7 @@ Built to replace expensive 24/7 server-based monitoring, this project leverages 
 ## 📂 Repository Structure
 
 *   `lambda_function.py`: The core AWS Lambda backend script.
-*   `frontend-dashboard/`: Contains the static frontend (`index.html`, `app.js`, `styles.css`).
+*   `docs/`: Contains the static frontend (`index.html`, `app.js`, `styles.css`).
 *   `Dockerfile`: A container configuration for safely testing the Lambda function locally in an isolated Linux environment.
 *   `requirements.txt`: Contains `boto3` for local testing only (pre-installed in the AWS Lambda runtime).
 
@@ -37,7 +37,7 @@ This project is designed to be deployed manually via the AWS Management Console 
     docker build -t serhydrosys .
     docker run --rm serhydrosys
     ```
-2.  Deploy the frontend by serving the `frontend-dashboard` directory locally or enabling GitHub Pages.
+2.  Deploy the frontend by serving the `docs` directory locally or enabling GitHub Pages.
 
 ## 🛠️ Tech Stack
 
